@@ -525,18 +525,26 @@ img {
 }
 
 .skills__js {
-  width: 60%;
+  width: 70%;
 }
 
-.skills__wordpress {
+.skills__java {
+  width: 75%;
+}
+
+.skills__node {
   width: 70%;
 }
 
 .skills__python {
-  width: 70%;
+  width: 85%;
 }
 
 .skills__tab {
+  width: 70%;
+}
+
+.skills__ts {
   width: 70%;
 }
 
@@ -544,23 +552,31 @@ img {
   width: 50%;
 }
 
-.skills__google {
-  width: 70%;
+.skills__github {
+  width: 90%;
 }
 
-.skills__bank {
+.skills__git {
   width: 80%;
 }
 
-.skills__google {
-  width: 70%;
-}
-
-.skills__counter {
+.skills__gitlab{
   width: 80%;
 }
 
-.skills__office {
+.skills__django {
+  width: 65%;
+}
+
+.skills__mysql {
+  width: 80%;
+}
+
+.skills__phpmyadmin {
+  width: 70%;
+}
+
+.skills__vscode{
   width: 90%;
 }
 
@@ -1329,3 +1345,99 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: .5s;
+}
+.box:hover{
+  height: 400px;
+}
+.box .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.box .imgBx img{
+  width: 300px;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+.box:hover .imgBx img{opacity: 1;}
+.box:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #ffffff;
+  z-index: -1;
+}
+.box:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #ffffff;
+  z-index: -2;
+  filter: blur(40px);
+}
+.box:before,
+.box:after{
+  background: linear-gradient(225deg, #89ff00,#010615,#00bcd4);
+}
+.box:nth-child(2):before,
+.box:nth-child(2):after{
+  background: linear-gradient(225deg, #ff005e,#010615,#fbff00);
+}
+.box:nth-child(3):before,
+.box:nth-child(3):after{
+  background: linear-gradient(225deg, #dd6300,#010615,#2196f3);
+}
+.box .content{
+  position: absolute;
+  bottom: 10px;
+  top: 300px;
+  left: 10px;
+  right: 10px;
+  height: 90px;
+  background: rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: .2s;
+}
+.box:hover .content{
+  opacity: 1;
+}
+.box .content h2{
+  font-size: 20px;
+  color: #fffefe;
+  font-weight: 1800;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.box .content h2 span{
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 1800;
+  letter-spacing: 2px;
+}
+
+
+
