@@ -296,10 +296,16 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  justify-self: center;
 }
 
 .home__blob-img {
-  width: 220px;
+  width: 185px;
+}
+
+.home__img {
+  justify-self: center;
+  align-self: center;
 }
 
 .home__data {
